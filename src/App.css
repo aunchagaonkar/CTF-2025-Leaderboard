@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+html,
+body,
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+canvas {
+  pointer-events: none;
+  z-index: -1;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200vh;
+  background: #111;
+  width: 100%;
+  overflow: hidden;
+}
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vh;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.login {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.login h2 {
+  font-size: 1.9em;
+  color: #fff;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input,
+.login .inputBx p {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  font-weight: bold;
+}
+.login .inputBx input[type="submit"],
+.login .inputBx button,
+.login .inputBx p {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #ea00ff);
+  background-position: 200% 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+.msggg {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-weight: bolder;
+  margin-top: 0.5rem;
+}
+.login .inputBx button {
+  padding: 12px 20px;
+  border-radius: 40px;
+  font-size: 1.1em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff357a, #ea00ff);
+}
+
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.login .links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.r3f {
+  position: absolute;
+}
+
+.Leaderb {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.search {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  font-size: 1.2em;
+}
+
+.search-title {
+  margin-right: 1rem;
+}
+.inputMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchInput {
+  border: none;
+  padding: 0.6rem 0.5rem;
+  width: 20rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-radius: 0.8rem;
+}
+
+.searchIcon {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.searchBtn {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.1rem;
+  background: linear-gradient(45deg, #ff357a, #ea00ff);
+}
+
+.search-btn {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: inherit;
+  border-radius: 50%;
+}
+
+.msg {
+  margin-left: 5rem;
+}
+.rank {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(245, 245, 245, 0.1),
+    rgba(174, 174, 174, 0.2),
+    rgba(245, 245, 245, 0.1)
+  );
+  backdrop-filter: blur(2px);
+  width: 90vw;
+  height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 2rem 4rem;
+  /* opacity: 0.5; */
+}
+.rank::-webkit-scrollbar {
+  display: none;
+}
+.rank h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.inner {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 60px; */
+  margin-top: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.title {
+  font-size: 1.3em;
+  padding: 1rem 6rem 1rem 5rem;
+}
+.player-rank {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(245, 245, 245, 0.2),
+    rgba(174, 174, 174, 0.4),
+    rgba(245, 245, 245, 0.2)
+  );
+  padding: 1rem 7rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+}
+
+.player-rank:hover {
+  background: linear-gradient(45deg, #ff357a, #ea00ff);
+  color: white;
+  scale: 1.02;
+  cursor: pointer;
+  font-weight: bold;
+}
+.points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.points-title {
+  margin-right: 3rem;
+}
+.points-coin {
+  width: 2.6rem;
+  margin-left: 1rem;
+}
+.bottom {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  /* border: 1px solid white; */
+  height: 100vh;
+  width: 100vw;
+}
+.main-header {
+  width: 100vw;
+  /* border: 1px solid white; */
+  align-self: flex-end;
+  position: absolute;
+}
+
+.btn-container > button {
+  margin-right: 2.4rem;
+  margin-top: 2.4rem;
+}
+.header-container {
+  width: 100vw;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.header-container > img {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 1.4rem;
+}
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-button {
+  display: none;
+}
+.trophy {
+  width: 2.2rem;
+}
+
+.switch {
+  z-index: 100057394759347500;
+  /* position: "absolute"; */
+}
+
+.toggle-border {
+  border: 2px solid #f0ebeb;
+  border-radius: 130px;
+  margin-bottom: 45px;
+  padding: 1px 2px;
+  background: linear-gradient(to bottom right, white, rgba(220, 220, 220, 0.5)),
+    white;
+  box-shadow: 0 0 0 2px #fbfbfb;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  margin-right: 4rem;
+}
+
+.toggle-border:last-child {
+  margin-bottom: 0;
+}
+
+.toggle-border input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-border label {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 20px;
+  background: linear-gradient(45deg, #ff357a, #ea00ff);
+  border-radius: 80px;
+  cursor: pointer;
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.3);
+  transition: background 0.5s;
+}
+
+.toggle-border input[type="checkbox"]:checked + label {
+  background: linear-gradient(45deg, #ff357a, #ea00ff);
+}
+
+.handle {
+  position: absolute;
+  top: -8px;
+  left: -10px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  background: repeating-radial-gradient(
+      circle at 50% 50%,
+      rgba(200, 200, 200, 0.2) 0%,
+      rgba(200, 200, 200, 0.2) 2%,
+      transparent 2%,
+      transparent 3%,
+      rgba(200, 200, 200, 0.2) 3%,
+      transparent 3%
+    ),
+    conic-gradient(
+      white 0%,
+      silver 10%,
+      white 35%,
+      silver 45%,
+      white 60%,
+      silver 70%,
+      white 80%,
+      silver 95%,
+      white 100%
+    );
+  border-radius: 50%;
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: left 0.4s;
+}
+
+.toggle-border input[type="checkbox"]:checked + label > .handle {
+  left: calc(100% - 35px + 10px);
+}
+
+@media only screen and (max-width: 600px) {
+  .ring {
+    width: 88vw;
+    height: 88vw;
+  }
+  .login {
+    width: 230px;
+  }
+  .login h2 {
+    font-size: 1.1em;
+  }
+  .login .inputBx input {
+    padding: 7px 5px;
+    border: 2px solid #fff;
+    border-radius: 0.5rem;
+    font-size: 1em;
+  }
+
+  .login .inputBx button {
+    display: none;
+  }
+
+  .login .inputBx input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .login .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .login .links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 16rem;
+  }
+  .mobile-button > button {
+    padding: 12px 20px;
+    border-radius: 0.5rem;
+    font-size: 1.1em;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff357a, #ea00ff);
+  }
+
+  .search {
+    margin-top: 2rem;
+    flex-direction: column;
+    min-height: 10vh;
+    font-size: 1.1em;
+  }
+
+  .search-title {
+    margin-right: 0;
+  }
+  .inputMain {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .searchInput {
+    width: 15rem;
+  }
+
+  .searchInput:focus {
+    border-radius: 0.6rem;
+  }
+  .msg {
+    margin-left: 0;
+    margin: 0 0.2rem 1rem 0.2rem;
+  }
+  .rank {
+    backdrop-filter: blur(2px);
+    height: 65vh;
+    padding: 2rem;
+  }
+  .rank > h1 {
+    margin-bottom: 1rem;
+  }
+  .inner {
+    margin-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title {
+    font-size: 1.2em;
+    padding: 1rem;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    margin-right: 1rem;
+  }
+  .player-rank {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    margin: 1rem 0;
+  }
+  .points-coin {
+    width: 2rem;
+    margin-left: 0.2rem;
+  }
+  .header-container > img {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 0;
+  }
+  .toggle-border {
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+}
