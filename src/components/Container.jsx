@@ -21,7 +21,7 @@ const Container = () => {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch("http://localhost:9563/getLeaderboard")
+      fetch("https://ctf-tech-backend.onrender.com/getLeaderboard")
         .then((res) => res.json())
         .then((data) => {
           const sortedUsers = data.sort((a, b) => {
@@ -51,7 +51,7 @@ const Container = () => {
     }
 
     axios
-      .get("http://localhost:9563/getLeaderboard")
+      .get("https://ctf-tech-backend.onrender.com/getLeaderboard")
       .then((response) => {
         const sortedUsers = response.data.sort((a, b) => {
           if (a.score !== b.score) {

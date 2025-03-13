@@ -11,7 +11,7 @@ const Submit = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:9563/check", {
+      .post("https://ctf-tech-backend.onrender.com/check", {
         userID: userID,
         flag: flag,
       })
