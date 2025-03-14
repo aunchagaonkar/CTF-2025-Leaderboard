@@ -22,7 +22,7 @@ const Submit = () => {
     setError(false);
     setLoading(true);
     axios
-      .post("https://ctf-tech-backend.onrender.com/check", {
+      .post("https://backend.technozion.tech/check", {
         userID: userID,
         flag: flag,
       })
