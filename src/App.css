@@ -161,7 +161,7 @@ body {
   position: absolute;
 }
 
-.Leaderb {
+/* .Leaderb {
   position: relative;
   top: 50%;
   left: 50%;
@@ -171,9 +171,9 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-}
+} */
 
-.search {
+/* .search {
   color: #fff;
   display: flex;
   justify-content: center;
@@ -181,9 +181,9 @@ body {
   width: 100vw;
   height: 15vh;
   font-size: 1.2em;
-}
+} */
 
-.search-title {
+/* .search-title {
   margin-right: 1rem;
 }
 .inputMain {
@@ -198,7 +198,7 @@ body {
   margin-right: 1rem;
   border-radius: 0.5rem;
   transition: all 0.2s;
-}
+} */
 
 .searchInput:focus {
   outline: none;
@@ -210,16 +210,16 @@ body {
   width: 1.3rem;
 }
 
-.searchBtn {
+/* .searchBtn {
   border-radius: 50%;
   outline: none;
   border: none;
   cursor: pointer;
   padding: 0.1rem;
   background: linear-gradient(45deg, #ff357a, #ea00ff);
-}
+} */
 
-.search-btn {
+/* .search-btn {
   display: flex;
   height: 2.5rem;
   width: 2.5rem;
@@ -228,12 +228,12 @@ body {
   position: relative;
   z-index: inherit;
   border-radius: 50%;
-}
+} */
 
 .msg {
   margin-left: 5rem;
 }
-.rank {
+/* .rank {
   background-image: linear-gradient(
     to right bottom,
     rgba(245, 245, 245, 0.1),
@@ -248,8 +248,8 @@ body {
   flex-direction: column;
   align-items: space-between;
   padding: 2rem 4rem;
-  /* opacity: 0.5; */
-}
+  
+} */
 .rank::-webkit-scrollbar {
   display: none;
 }
@@ -259,21 +259,21 @@ body {
   color: #ffffff;
 }
 
-.inner {
+/* .inner {
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   /* gap: 60px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   padding-left: 2rem;
   padding-right: 2rem;
-}
+} */
 .title {
   font-size: 1.3em;
   padding: 1rem 6rem 1rem 5rem;
-}
+} */
 .player-rank {
   background-image: linear-gradient(
     to right bottom,
@@ -294,7 +294,7 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-.points {
+/* .points {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,7 +305,7 @@ body {
 .points-coin {
   width: 2.6rem;
   margin-left: 1rem;
-}
+} */
 .bottom {
   display: flex;
   position: relative;
@@ -354,9 +354,9 @@ body {
 .mobile-button {
   display: none;
 }
-.trophy {
-  width: 2.2rem;
-}
+/* .trophy {
+  width: 2.2rem; */
+/* } */
 
 .switch {
   z-index: 100057394759347500;
@@ -495,29 +495,29 @@ body {
     background: linear-gradient(45deg, #ff357a, #ea00ff);
   }
 
-  .search {
+  /* .search {
     margin-top: 2rem;
     flex-direction: column;
     min-height: 10vh;
     font-size: 1.1em;
-  }
+  } */
 
-  .search-title {
+  /* .search-title {
     margin-right: 0;
-  }
-  .inputMain {
+  } */
+  /* .inputMain {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-  }
+  } */
 
-  .searchInput {
+  /* .searchInput {
     width: 15rem;
   }
 
   .searchInput:focus {
     border-radius: 0.6rem;
-  }
-  .msg {
+  } */
+  /* .msg {
     margin-left: 0;
     margin: 0 0.2rem 1rem 0.2rem;
   }
@@ -538,24 +538,24 @@ body {
   .title {
     font-size: 1.2em;
     padding: 1rem;
-  }
+  } */
   thead {
     display: none;
   }
   td {
     margin-right: 1rem;
   }
-  .player-rank {
+  /* .player-rank {
     padding: 1rem;
     border-radius: 0.3rem;
     transition: all 0.3s ease;
     font-size: 1em;
     margin: 1rem 0;
-  }
-  .points-coin {
+  } */
+  /* .points-coin {
     width: 2rem;
     margin-left: 0.2rem;
-  }
+  } */
   .header-container > img {
     width: 6rem;
     height: 6rem;

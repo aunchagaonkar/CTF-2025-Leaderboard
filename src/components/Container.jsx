@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import coin from "../assets/coins2.png";
 import trophy from "../assets/trophy.png";
+import './Container.css'
 
 const Container = () => {
   const [user, setUser] = useState([]);
@@ -113,7 +114,7 @@ const Container = () => {
       </div>
       <div className="rank">
         <h1>
-          <img src={trophy} alt="trophy" className="trophy" /> Ranklist{" "}
+          <img src={trophy} alt="trophy" className="trophy" /> Leaderboard  {" "}
           <img src={trophy} alt="trophy" className="trophy" />
         </h1>
         <table>

@@ -40,7 +40,7 @@ const Main = () => {
             <input id="one" type="checkbox" onChange={handleClick} />
             <label htmlFor="one">
               <div className="handle"></div>
-            </label>
+            </label>  
           </div>
         </div>
       </div>

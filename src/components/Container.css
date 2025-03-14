@@ -1,0 +1,134 @@
+.Leaderb {
+    max-width: 1000px;
+    margin: 40px auto;
+    margin-top: 90px;
+    padding: 20px;
+    height:auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* 🔍 Search Box */
+  .search {
+    margin-bottom: 20px;
+  }
+  
+  .search-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .inputMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+  
+  .searchBtn {
+    background-color: #e902f1;
+    border: none;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .searchBtn:hover {
+    background-color: #ff4949;
+  }
+  
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* 📜 Rank Table */
+  .rank {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .rank h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .trophy {
+    width: 30px;
+    height: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  th::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  td {
+    padding: 12px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .player-rank:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .player-rank:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+  }
+  
+  .points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .points-coin {
+    width: 18px;
+    height: 18px;
+  }
+  
