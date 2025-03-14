@@ -21,7 +21,7 @@ const Container = () => {
               return new Date(a.timeStamp) - new Date(b.timeStamp);
             }
           });
-          const top10Users = sortedUsers.slice(0, 10);
+          const top10Users = sortedUsers.slice(0, 50);
           setUser(top10Users);
         })
         .catch((error) => {
