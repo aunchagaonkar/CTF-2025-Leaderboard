@@ -122,7 +122,7 @@ const Container = () => {
                 <td>{user.userID}</td>
                 <td className="points">
                   {user.score}
-                  <img src={coin} alt="coin" className="points-coin" />
+                  {/* <img src={coin} alt="coin" className="points-coin" /> */}
                 </td>
                 <td>
   {(() => {
