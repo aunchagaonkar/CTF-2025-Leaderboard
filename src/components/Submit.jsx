@@ -51,7 +51,11 @@ const Submit = () => {
         <i style={{ "--clr": "#1fbfdb" }}></i>
         <i style={{ "--clr": "#a60074" }}></i>
 
-        <form onSubmit={handleFormSubmit} className="login">
+        <div className='end'>
+          <h1>The Competition has Ended.</h1>
+        </div>
+
+        {/* <form onSubmit={handleFormSubmit} className="login">
           <div className="login">
             <h2 style={{ textAlign: "center", marginBottom: "0.2rem" }}>
               Capture The Flag
@@ -83,7 +87,7 @@ const Submit = () => {
               )}
             </div>
           </div>
-        </form>
+        </form> */}
       </div>
 
       <div className="mobile-button"></div>
