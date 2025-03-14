@@ -2,23 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import coin from "../assets/coins2.png";
 import trophy from "../assets/trophy.png";
-import './Container.css'
+import "./Container.css";
 
 const Container = () => {
   const [user, setUser] = useState([]);
-  // const [x, setX] = useState(30);
   const [rankMsg, setRankMsg] = useState("");
   const [rankSearch, setrankSearch] = useState("");
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setX(x - 1);
-  //   }, 1000);
-  //   if (x === 0) {
-  //     setX(30);
-  //   }
-  //   return () => clearInterval(intervalId);
-  // }, [x]);
 
   useEffect(() => {
     const fetchData = () => {
@@ -114,7 +103,7 @@ const Container = () => {
       </div>
       <div className="rank">
         <h1>
-          <img src={trophy} alt="trophy" className="trophy" /> Leaderboard  {" "}
+          <img src={trophy} alt="trophy" className="trophy" /> Leaderboard{" "}
           <img src={trophy} alt="trophy" className="trophy" />
         </h1>
         <table>
@@ -136,18 +125,25 @@ const Container = () => {
                   <img src={coin} alt="coin" className="points-coin" />
                 </td>
                 <td>
-                  {new Date(user.timeStamp).toLocaleTimeString("en-US", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    second: "2-digit",
-                    hour12: false,
-                  })}
-                </td>
+  {(() => {
+    const utcDate = new Date(user.timeStamp); // Convert string to Date object
+    const istDate = new Date(utcDate.getTime() + 5.5 * 60 * 60 * 1000); // Convert to IST
+    return istDate
+      .toLocaleTimeString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true, // Enable 12-hour format
+      })
+      .replace("am", "AM")
+      .replace("pm", "PM"); // Convert AM/PM to uppercase
+  })()}
+</td>
               </tr>
             ))}
           </tbody>
         </table>
-        {/* <div className="bottom">Fetching New Ranklist in {x} seconds</div> */}
       </div>
     </div>
   );

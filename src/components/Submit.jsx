@@ -21,7 +21,7 @@ const Submit = () => {
         setFlag("");
       })
       .catch(() => {
-        setMsg("Invalid Flag or invalid username");
+        setMsg("Invalid Flag or invalid UserID");
         setLoading(false);
         setFlag("");
       });
